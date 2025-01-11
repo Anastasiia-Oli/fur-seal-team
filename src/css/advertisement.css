@@ -1,0 +1,137 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+.advertisement .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-image: url(/img/advertisement/fon-mobile@1x.webp);
+  background-color: #0c0c0c;
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.advertisement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.text {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fbfbfb;
+  text-align: center;
+}
+
+.story {
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.btn-contact {
+  width: 140px;
+  height: 40px;
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  border-radius: 16px;
+  background-color: transparent;
+  opacity: 0.8;
+  margin-top: 10px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.coment-btn {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #fbfbfb;
+  white-space: nowrap;
+}
+
+.btn-contact:hover,
+.btn-contact:focus {
+  background: #fbfbfb;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.coment-btn:hover,
+.coment-btn:focus {
+  color: #0c0c0c;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .advertisement .container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-image: url(/img/advertisement/fon-tablet@1x.webp);
+  }
+
+  .text {
+    font-size: 36px;
+    text-align: center;
+
+    padding-bottom: 20px;
+  }
+
+  .btn-contact .coment-btn {
+    width: 160px;
+    height: 48px;
+    padding-top: 20px;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advertisement .container {
+    background-image: url(/img/advertisement/fon-desktop@2x.webp);
+    padding: 50px;
+    background-image: url(/img/advertisement/fon-desktop@2x.webp);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 298px;
+  }
+
+  .text {
+    font-size: 48px;
+    text-align: left;
+    flex: 1;
+  }
+
+  .btn-contact {
+    width: 160px;
+    height: 48px;
+    margin-top: 0;
+    align-self: flex-start;
+    margin-top: 50px;
+  }
+  .contact-btn {
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-left: 75px;
+    padding-bottom: 90px;
+  }
+}
