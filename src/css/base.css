@@ -52,6 +52,8 @@ textarea {
 .container {
   min-width: 320px;
   max-width: 375px;
+  min-width: 320px;
+  max-width: 370px;
   margin: 0 auto;
   padding: 0 20px;
 }
