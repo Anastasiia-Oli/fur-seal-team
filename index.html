@@ -11,7 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
     <script type="module" crossorigin src="/fur-seal-team/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/fur-seal-team/assets/index-BrW6h0rH.css">
+    <link rel="stylesheet" crossorigin href="/fur-seal-team/assets/index-B4vXy6P6.css">
   </head>
   <body>
     <header class="header">
@@ -117,7 +117,56 @@
 </section>
 
       <section class="contact">
-  <div class="container"></div>
+  <div class="container">
+    <h2 class="contact-us-title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-input-wrapper">
+                    <p class="contact-text">Please use the form below to contact us. Enter your name, email, phone, and message and we'll get back to you shortly.
+                    </p>
+                    <form class="contact-form">
+                            <input
+                                class="contact-input"
+                                id="user-name" type="text"
+                                name="user-name"
+                                placeholder="Name"
+                                required
+                                pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
+                                />
+                            <input
+                                class="contact-input"
+                                id="form-email" type="email"
+                                name="Email"
+                                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                                placeholder="Email"
+                                required
+                                />
+                            <input
+                                class="contact-input"
+                                id="form-tel" type="tel"
+                                name="tel"
+                                pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+                                placeholder="+380"
+                                title="Enter the phone number in the format: +380-XX-XXX-XX-XX"
+                                required
+                                />
+                            <textarea class="contact-textarea" id="user-comment"
+                                name="user-comment"
+                                placeholder="Comment"></textarea>
+             
+                        <button type="submit" class="contact-submit-button">Send</button>
+                        </form>
+                    </div>
+                <div class="contact-img-wrapper">
+                    <picture class="contact-img-set">
+                        <source srcset="../img/contact/contact-desk@1.jpg 1x, ../img/contact/contact-desk@2.jpg 2x" media="(min-width: 1280px)">
+                        <source srcset="../img/contact/contact-tab@1.jpg 1x, ../img/contact/contact-tab@2.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="../img/contact/contact-mob@1.jpg 1x, ../img/contact/contact-mob@2.jpg 2x" media="(max-width: 767px)">
+                        
+                        <img class="contact-img" src="../img/contact/contact-mob@1.jpg" alt="watch">
+                    </picture>
+                </div>
+            </div>
+  </div>
 </section>
 
     </main>
